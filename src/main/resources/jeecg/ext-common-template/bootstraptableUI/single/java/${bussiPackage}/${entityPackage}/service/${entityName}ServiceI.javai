@@ -1,0 +1,52 @@
+package ${bussiPackage}.${entityPackage}.service;
+import ${bussiPackage}.${entityPackage}.entity.${entityName}Entity;
+import org.jeecgframework.core.common.service.CommonService;
+
+import java.io.Serializable;
+
+/**
+ * @author onlineGenerator
+ * @date ${ftl_create_time}
+ */
+public interface ${entityName}ServiceI extends CommonService{
+
+	/**
+     * 删除实体类
+     *
+     * @param entity ${entityName}Entity实体类
+     * @throws Exception exception
+     * @author onlineGenerator
+     */
+ 	void delete(${entityName}Entity entity) throws Exception;
+
+ 	/**
+     * 保存实体类数据
+     *
+     * @param entity ${entityName}Entity实体类
+     * @throws Exception exception
+     * @return java.io.Serializable
+     * @author onlineGenerator
+     */
+ 	Serializable save(${entityName}Entity entity) throws Exception;
+
+ 	/**
+     * 保存或更新实体类数据
+     *
+     * @param entity ${entityName}Entity实体类
+     * @throws Exception exception
+     * @author onlineGenerator
+     */
+ 	void saveOrUpdate(${entityName}Entity entity) throws Exception;
+ 	
+	<#list buttons as btn>
+ 	<#if btn.optType=='action'>
+ 	/**
+	 * 自定义按钮-[${btn.buttonName}]业务处理
+	 *
+	 * @param entity ${entityName}Entity实体类
+	 * @throws Exception exception
+	 */
+	 void do${btn.buttonCode?cap_first}Bus(${entityName}Entity entity) throws Exception;
+ 	</#if>
+ 	</#list> 
+}

@@ -1,0 +1,119 @@
+.RecipeClass{
+    width: 300px;
+    height: 330px;
+    top: 120px;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    box-shadow: 0px 0px 4px #828282;
+    background: #FFF;
+    border-radius: 10px;
+    overflow: hidden;
+    overflow-y: auto;
+    display: none;
+}
+.pecipeBtn{
+    float: right;
+    margin: 2px 0px;
+    position: absolute;
+    right: 30px;
+    cursor: pointer;
+}
+#submit{
+    background-color: #FF9933;
+    border-color: #FF9933;
+    color:#FFF;
+}
+#close{
+	background-color: #DCDCDC;
+    border-color: #DCDCDC;
+    color:#FFF;
+}
+#isTnput{
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    top: 10px;
+    text-align: center;
+}
+._container{
+	width:768px;
+	overflow: hidden;
+	margin: 0 auto;
+	position: relative;
+}
+#ack{
+	color: #fff;
+    background-color: #283847;
+    border-color: #283847;
+}
+.date-op{
+	width:100%;
+    height: 191px;
+	padding: 30px;
+}
+.content-meal{
+    min-height: 100px;
+    width: calc(100% - 60px);
+    border-bottom: 1px solid #ececec;
+    margin: 0px 30px;
+}
+.date-item{
+	display: grid;
+    padding: 2px 0px;
+    border-top: 1px solid #ececec;
+}
+.title{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+}
+.meal{
+	min-height: 40px;
+	width:100%;
+	display: inline-block;
+}
+.meal-title{
+	
+}
+.meal-item{
+	display: block;
+    height: 0px;
+    overflow: hidden;
+    padding: 0px 0;
+	transition:all .5s linear;
+	-webkit-transition:all .5s linear;
+}
+.buttons{
+	    position: relative;
+    float: right;
+    top: 15px;
+    right: 20px;
+}
+.start{
+    width: 30%;
+    text-align: center;
+    float: left;
+    height: 33px;
+    line-height: 33px;
+}
+.end{
+    width: 30%;
+    text-align: center;
+    float: left;
+    height: 33px;
+    line-height: 33px;
+}
+.startDate{
+    width: 53%;
+    float: left;
+}
+.endDate{
+    width: 53%;
+    float: left;
+}
+.btnaddDelete{
+	padding: 0px 2%;
+}

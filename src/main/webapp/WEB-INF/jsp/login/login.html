@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,
+   				minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>登录</title>
+    <link href="../../plug-in/bootstrap/css/bootstrap.css" rel="stylesheet"/>
+    <link href="../../plug-in/login/css/uc-login.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="login-wrapper">
+        <div class="logo-nav">
+            <div class="logo">
+                <img src="../../plug-in/uc-login/images/logo.png"/>
+            </div>
+        </div>
+        <div class="login-body">
+            <table class="login-inner">
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="login-content">
+                                军民两用机器人整体解决方案提供商<br>
+                                大安防与大健康领域智能机器人领导者
+                            </div>
+                        </td>
+                        <td style="width: 402px;">
+                            <div class="login-title">CNBOT统一管理系统</div>
+                            <div class="jssdk-wrapper">
+                                <div class="quc-wrapper quc-panel">
+                                    <div class="quc-panel-hd">
+                                        <div class="quc-panel-title">
+                                            <div class="quc-tab-item">
+                                                用户登录
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="quc-main">
+                                        <div class="quc-login-content">
+                                            <form method="post" id="loinForm" class="quc-form" autocomplete="off">
+                                                <!-- 单点登录参数 -->
+                                                <input type="hidden" id="ReturnURL"  name="ReturnURL" value="${ReturnURL}"/>
+                                                <div class="quc-form-item quc-field quc-field-has-option">
+                                                    <div class="quc-input">
+                                                        <input type="text" name="userName" id="userName" placeholder="用户名" value="admin">
+                                                    </div>
+
+                                                </div>
+                                                <div class="quc-form-item quc-field">
+                                                    <div class="quc-input">
+                                                        <input type="password" name="password" id="password" placeholder="密码" value="123456">
+                                                    </div>
+                                                </div>
+                                                <div class="quc-form-item quc-field quc-form-item-img-captcha">
+                                                    <div class="quc-input">
+                                                        <input type="text" name="randCode" placeholder="输入验证码">
+                                                    </div>
+                                                    <img class="quc-captcha-change quc-captcha-img" src=""/>
+                                                    <span class="quc-captcha-change quc-link">换一张</span>
+                                                </div>
+                                                <div class="quc-form-item quc-submit">
+                                                    <input style="width:326px;" id="but_login" onclick="checkUser()" class="quc-button" type="submit" value="登录" >
+                                                </div>
+                                                <div class="quc-form-item" style="height: 59px;">
+                                                    <div class="quc-form-item-checkbox">
+                                                        <input type="checkbox" id="on_off"  name="remember" value="yes" checked="">记住密码
+                                                    </div>
+                                                    <div class="form-register" style="float:right;">
+                                                        <a href="#">立即注册</a>
+                                                    </div>
+
+
+
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="login-footer">
+            <div>
+                <p>@CNBOT版权所有v_1.0.0</p>
+                <p>地址：湖南省长沙市开福区华创国际C座6层  联系方式：0731-85242328  官网：www.hncnbot.com</p>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript" src="plug-in/jquery/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="plug-in/bootstrap/js/bootstrap.js"></script>
+</body>
+</html>
